@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View, FlatList, useState } from 'react-native';
+import React, {useState} from 'react';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoitem';
 
@@ -8,7 +8,7 @@ export default function App() {
     {text: 'go to coffee shop', key: '1'},
     {text: 'learn spring', key: '2'},
     {text: 'learn ruby', key: '3'}
-  ])
+  ]);
 
   const pressHandler = (key) => {
     setTodos((prevTodos) => {
